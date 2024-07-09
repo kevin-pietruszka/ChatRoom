@@ -160,7 +160,7 @@ int main(int argc, char *argv[]) {
   }
 
   sockfd = socket(AF_INET, SOCK_DGRAM, 0);
-  if (socket < 0) {
+  if (sockfd < 0) {
     perror("Failed to create socket");
     exit(EXIT_FAILURE);
   }
